@@ -15,3 +15,24 @@ test('uses a default name when no name is supplied', () => {
     'Hello, Cloud Student! CI/CD pipeline is working.'
   );
 });
+
+test('handles Thai unicode name correctly', () => {
+  assert.equal(
+    createMessage('สมชาย'),
+    'Hello, สมชาย! CI/CD pipeline is working.'
+  );
+});
+
+test('handles empty string without throwing error', () => {
+  assert.equal(
+    createMessage(''),
+    'Hello, ! CI/CD pipeline is working.'
+  );
+});
+
+test('handles numeric input converted to string', () => {
+  assert.equal(
+    createMessage(2026),
+    'Hello, 2026! CI/CD pipeline is working.'
+  );
+});
