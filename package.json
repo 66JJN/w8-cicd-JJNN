@@ -1,0 +1,13 @@
+{
+  "name": "w8-cicd-lab",
+  "version": "1.0.0",
+  "description": "Week 8 CI/CD lab",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
