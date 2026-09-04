@@ -5,7 +5,7 @@ const { createMessage } = require('./index');
 test('returns a greeting for the supplied name', () => {
   assert.equal(
     createMessage('Nina'),
-    'Hello, Nina! This test should fail.'
+    'Hello, Nina! CI/CD is working.'
   );
 });
 
